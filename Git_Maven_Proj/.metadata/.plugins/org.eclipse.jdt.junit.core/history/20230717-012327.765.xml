@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestCaseRunner" project="Cucumber_Rest_Framework" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="com.qa.runners.TestCaseRunner" time="0.0">
+    <testcase name="initializationError" classname="com.qa.runners.TestCaseRunner" time="0.0">
+      <error>java.lang.IllegalArgumentException: Illegal character in path at index 10: D:/Eclipse WS/Git_Maven_Proj/Cucumber_Rest_Framework/src/test/java/com/qa/stepDef&#13;
+	at java.base/java.net.URI.create(URI.java:906)&#13;
+	at io.cucumber.core.feature.GluePath.parseAssumeClasspathScheme(GluePath.java:81)&#13;
+	at io.cucumber.core.feature.GluePath.parse(GluePath.java:68)&#13;
+	at io.cucumber.core.options.CucumberOptionsAnnotationParser.addGlue(CucumberOptionsAnnotationParser.java:127)&#13;
+	at io.cucumber.core.options.CucumberOptionsAnnotationParser.parse(CucumberOptionsAnnotationParser.java:45)&#13;
+	at io.cucumber.junit.Cucumber.&lt;init&gt;(Cucumber.java:120)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)&#13;
+	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)&#13;
+	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:86)&#13;
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:70)&#13;
+	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:37)&#13;
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:70)&#13;
+	at org.junit.internal.requests.ClassRequest.createRunner(ClassRequest.java:28)&#13;
+	at org.junit.internal.requests.MemoizingRequest.getRunner(MemoizingRequest.java:19)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.createUnfilteredTest(JUnit4TestLoader.java:90)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.createTest(JUnit4TestLoader.java:76)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.loadTests(JUnit4TestLoader.java:49)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:513)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+Caused by: java.net.URISyntaxException: Illegal character in path at index 10: D:/Eclipse WS/Git_Maven_Proj/Cucumber_Rest_Framework/src/test/java/com/qa/stepDef&#13;
+	at java.base/java.net.URI$Parser.fail(URI.java:2974)&#13;
+	at java.base/java.net.URI$Parser.checkChars(URI.java:3145)&#13;
+	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3227)&#13;
+	at java.base/java.net.URI$Parser.parse(URI.java:3175)&#13;
+	at java.base/java.net.URI.&lt;init&gt;(URI.java:623)&#13;
+	at java.base/java.net.URI.create(URI.java:904)&#13;
+	... 24 more&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

@@ -1,0 +1,15 @@
+package com.qa.runners;
+
+import org.junit.runner.RunWith;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features = "featurefiles",
+				 glue = "stepDef", tags = "naukri",
+				 monochrome = true,
+				 plugin = { "pretty","html:target/cucumber.html" })
+public class TestCaseRunner {
+
+}

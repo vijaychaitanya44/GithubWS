@@ -1,0 +1,18 @@
+package com.qa.app.tests;
+
+import org.testng.annotations.Test;
+
+import com.qa.app.utils.Utility;
+
+public class LoginTest {
+	
+	Utility util = new Utility();
+	@Test
+	public void login1(String browser) {
+		
+		Utility.startBrowser("chrome");
+		
+		
+	}
+
+}

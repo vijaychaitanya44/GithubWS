@@ -1,0 +1,81 @@
+package com.qa.app.utils;
+
+import java.time.Duration;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+
+import com.qa.app.waits.CustomWaits;
+
+public class Utility {
+
+	static WebDriver driver;
+
+	public static WebDriver getBrowserInstance() {
+		return driver;
+	}
+
+	public static WebDriver startBrowser(String browser) {
+
+		if (browser.contains("chrome") || browser.contains("Google") || browser.contains("GC")) {
+			driver = new ChromeDriver();
+
+		} else if (browser.contains("firefox") || browser.contains("FF") || browser.contains("Mozilla")) {
+			driver = new FirefoxDriver();
+		}
+
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.get("https://www.google.com");
+
+		return driver;
+	}
+
+	public void clickElement(WebDriver driver, By locator) {
+
+		try {
+			driver.findElement(locator).click();
+		} catch (Exception e) {
+
+			try {
+				Actions act = new Actions(driver);
+				act.moveToElement(driver.findElement(locator)).click().build().perform();
+
+			} catch (Exception e2) {
+				JavascriptExecutor jse = (JavascriptExecutor) driver;
+
+				jse.executeScript("arguments[0].click", driver.findElement(locator));
+
+			}
+		}
+
+	}
+
+	public void enterText(WebDriver driver, By loactor, String value) {
+
+		driver.findElement(loactor).sendKeys(value);
+	}
+
+	public static Alert handleAlert(WebDriver driver, By localtor) {
+
+		Alert ale = null;
+
+		for (int i = 0; i < 15; i++) {
+
+			try {
+				ale = driver.switchTo().alert();
+			} catch (NoAlertPresentException e) {
+				CustomWaits.waitForSeconds(i);
+			}
+		}
+		return ale;
+
+	}
+
+}

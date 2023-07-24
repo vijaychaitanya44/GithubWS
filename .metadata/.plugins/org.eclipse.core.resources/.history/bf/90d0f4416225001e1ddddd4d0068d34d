@@ -1,0 +1,19 @@
+package com.qa.app.tests;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
+import com.qa.app.utils.Utility;
+
+public class LoginTest {
+	
+	WebDriver driver;
+	@Test
+	public void login1(String browser) {
+		
+		driver =Utility.startBrowser("chrome");
+		
+		
+	}
+
+}

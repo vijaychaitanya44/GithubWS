@@ -1,0 +1,30 @@
+package com.qa.hooks;
+
+import io.cucumber.java.After;
+import io.cucumber.java.AfterStep;
+import io.cucumber.java.Before;
+import io.cucumber.java.BeforeStep;
+
+public class CucumberHooks {
+
+	@Before
+	public void beforeScenario() {
+
+		System.out.println("This is BEFORE Scenario - FIRST STEP");
+	}
+
+	@After
+	public void afterScenario() {
+		System.out.println("This is AFTER Scenario - LAST STEP");
+	}
+
+	@BeforeStep
+	public void beforeStep() {
+
+	}
+
+	@AfterStep
+	public void afterStep() {
+
+	}
+}

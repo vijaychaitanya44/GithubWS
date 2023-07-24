@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-25T02:29:37 IST" name="Default suite" finished-at="2023-07-25T02:29:55 IST" duration-ms="17985">
+    <groups>
+    </groups>
+    <test started-at="2023-07-25T02:29:37 IST" name="Default test" finished-at="2023-07-25T02:29:55 IST" duration-ms="17985">
+      <class name="com.qa.app.tests.LoginTest">
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:com.qa.app.tests.LoginTest@2eae8e6e]" started-at="2023-07-25T02:29:37 IST" name="setUpBrowser" finished-at="2023-07-25T02:29:43 IST" duration-ms="5606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method signature="login1()[pri:0, instance:com.qa.app.tests.LoginTest@2eae8e6e]" started-at="2023-07-25T02:29:43 IST" name="login1" finished-at="2023-07-25T02:29:44 IST" duration-ms="1743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login1 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.qa.app.tests.LoginTest@2eae8e6e]" started-at="2023-07-25T02:29:44 IST" name="closeBrowser" finished-at="2023-07-25T02:29:45 IST" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:com.qa.app.tests.LoginTest@2eae8e6e]" started-at="2023-07-25T02:29:45 IST" name="setUpBrowser" finished-at="2023-07-25T02:29:48 IST" duration-ms="3334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method signature="login2()[pri:0, instance:com.qa.app.tests.LoginTest@2eae8e6e]" started-at="2023-07-25T02:29:48 IST" name="login2" finished-at="2023-07-25T02:29:50 IST" duration-ms="1636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login2 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.qa.app.tests.LoginTest@2eae8e6e]" started-at="2023-07-25T02:29:50 IST" name="closeBrowser" finished-at="2023-07-25T02:29:50 IST" duration-ms="179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:com.qa.app.tests.LoginTest@2eae8e6e]" started-at="2023-07-25T02:29:50 IST" name="setUpBrowser" finished-at="2023-07-25T02:29:53 IST" duration-ms="3267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method signature="login3()[pri:0, instance:com.qa.app.tests.LoginTest@2eae8e6e]" started-at="2023-07-25T02:29:53 IST" name="login3" finished-at="2023-07-25T02:29:55 IST" duration-ms="1793" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login3 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.qa.app.tests.LoginTest@2eae8e6e]" started-at="2023-07-25T02:29:55 IST" name="closeBrowser" finished-at="2023-07-25T02:29:55 IST" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.qa.app.tests.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

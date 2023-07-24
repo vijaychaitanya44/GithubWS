@@ -1,0 +1,32 @@
+package com.qa.stepDef;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+
+public class NaukriLogin_StepDef {
+	@Given("User enters the URL")
+	public void user_enters_the_url() {
+	 
+		System.out.println("User entered URL");
+	}
+
+	@Then("User types in Username")
+	public void user_types_in_username() {
+		System.out.println("User types in USER NAME");
+	}
+
+	@Then("User types in Password")
+	public void user_types_in_password() {
+		System.out.println("User types in PASSWORD");
+	}
+
+	@Then("Clicks on Login button")
+	public void clicks_on_login_button() {
+		System.out.println("User clicks in LOGIN BUTTON");
+	}
+
+	@Then("Successfully logged into system")
+	public void successfully_logged_into_system() {
+		System.out.println("Logged into SYSTEM SUCCESSFULY");
+	}
+}
