@@ -3,10 +3,7 @@ package com.qa.app.utils;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.time.Duration;
-import java.util.logging.FileHandler;
 
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -14,9 +11,9 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.io.FileHandler;
 
 import com.qa.app.waits.CustomWaits;
 
@@ -27,8 +24,6 @@ public class Utility {
 	public static WebDriver getBrowserInstance() {
 		return driver;
 	}
-
-	
 
 	public void clickElement(WebDriver driver, By locator) {
 
@@ -94,7 +89,8 @@ public class Utility {
 //			FileUtils.copyFile(source, dest);
 
 			((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-			FileUtils.copyFile(((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE),
+
+			FileHandler.copy(((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE),
 					new File("D:/GithubWS/page_obj_mod/screenshots/text.png"));
 
 		} catch (FileNotFoundException e) {
@@ -106,13 +102,12 @@ public class Utility {
 	}
 
 	public static void scrollIntoView(WebDriver driver, By locator) {
-			try {
+		try {
 			Actions act = new Actions(driver);
 			act.scrollToElement(driver.findElement(locator)).perform();
-			}
-			catch(Exception e) {
-				JavascriptExecutor jse = (JavascriptExecutor)driver;
-				jse.executeScript("arguments[0].scrollIntoView();", driver.findElement(locator));
-			}
+		} catch (Exception e) {
+			JavascriptExecutor jse = (JavascriptExecutor) driver;
+			jse.executeScript("arguments[0].scrollIntoView();", driver.findElement(locator));
+		}
 	}
 }

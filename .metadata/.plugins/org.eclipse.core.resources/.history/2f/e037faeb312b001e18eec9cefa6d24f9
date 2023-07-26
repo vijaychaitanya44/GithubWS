@@ -1,0 +1,7 @@
+package com.qa.app.listeners;
+
+import org.testng.ITestListener;
+
+public class ExtentTestNGITestListner implements ITestListener{
+
+}

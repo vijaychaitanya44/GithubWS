@@ -1,0 +1,44 @@
+package com.qa.app.tests;
+
+import java.sql.Driver;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
+import com.qa.app.pages.LoginPage;
+import com.qa.app.utils.BaseClass;
+import com.qa.app.utils.BrowserFactory;
+import com.qa.app.utils.Utility;
+
+public class LoginTest extends BaseClass {
+	
+	
+	@Test
+	public void login1() {
+		
+		LoginPage login = new LoginPage(driver);
+		
+		login.loginToApplication("Admin","admin123");
+		Utility.takeScreenShot(driver);
+		
+		
+	}
+	
+	@Test
+	public void login2() {
+		
+		LoginPage login = new LoginPage(driver);
+		
+		login.loginToApplication("Admin","4563");
+		
+	}
+
+	@Test
+	public void login3() {
+		
+		LoginPage login = new LoginPage(driver);
+		
+		login.loginToApplication("Admin","admin123");
+		
+	}
+}

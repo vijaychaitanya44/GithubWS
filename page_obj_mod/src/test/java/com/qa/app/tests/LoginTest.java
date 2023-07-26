@@ -3,6 +3,7 @@ package com.qa.app.tests;
 import java.sql.Driver;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.qa.app.pages.LoginPage;
@@ -19,6 +20,8 @@ public class LoginTest extends BaseClass {
 		LoginPage login = new LoginPage(driver);
 		
 		login.loginToApplication("Admin","admin123");
+		Utility.takeScreenShot(driver);
+		
 		
 	}
 	
@@ -27,7 +30,8 @@ public class LoginTest extends BaseClass {
 		
 		LoginPage login = new LoginPage(driver);
 		
-		login.loginToApplication("Admin","admin123");
+		login.loginToApplication("Admin","4563");
+		Assert.assertTrue(false);
 		
 	}
 

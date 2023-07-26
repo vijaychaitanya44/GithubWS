@@ -7,6 +7,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BrowserFactory {
+	
+	public static WebDriver driver;
+	
+	public static WebDriver getBrowserInstance() {
+		return driver;
+	}
 	public static WebDriver startBrowser(String browser, String appURL) {
 		WebDriver driver =null;
 

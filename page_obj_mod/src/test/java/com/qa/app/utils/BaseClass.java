@@ -14,6 +14,8 @@ public class BaseClass {
 	@BeforeMethod
 	public void setUpBrowser() {
 		
+		System.out.println("*********Setting up Browser*********");
+		
 		driver = 
 				BrowserFactory.startBrowser(ConfigReader.getProperty("browser"), ConfigReader.getProperty("url"));
 	}
@@ -21,8 +23,9 @@ public class BaseClass {
 	@AfterMethod
 
 	public void closeBrowser() {
-
+		System.out.println("*********Closing up Browser*********");
 		driver.quit();
+		
 	}
 
 }

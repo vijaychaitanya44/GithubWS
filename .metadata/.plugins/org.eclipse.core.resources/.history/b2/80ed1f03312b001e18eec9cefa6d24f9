@@ -1,0 +1,18 @@
+package com.qa.app.listeners;
+
+import com.aventstack.extentreports.reporter.ExtentReporter;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
+
+public class ExtentManager {
+	
+	public static void createInstance() {
+		
+		ExtentSparkReporter sparkReporter = new  ExtentSparkReporter("D:/GithubWS/page_obj_mod/extentreports/report1.html");
+		sparkReporter.config().setTheme(Theme.DARK);
+		sparkReporter.config().setReportName("Automation Sprint-1");
+		sparkReporter.config().setDocumentTitle("Sprint report -1");
+		
+	}
+
+}

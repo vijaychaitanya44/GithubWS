@@ -1,0 +1,13 @@
+package com.qa.app.listeners;
+
+import com.aventstack.extentreports.reporter.ExtentReporter;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+
+public class ExtentManager {
+	
+	public static void createInstance() {
+		
+		ExtentSparkReporter sparkReporter = new  ExtentSparkReporter("D:/GithubWS/page_obj_mod/extentreports/report1.html");
+	}
+
+}

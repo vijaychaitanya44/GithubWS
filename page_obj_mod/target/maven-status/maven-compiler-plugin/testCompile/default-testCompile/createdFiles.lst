@@ -1,0 +1,8 @@
+com\qa\app\waits\CustomWaits.class
+com\qa\app\tests\LoginTest.class
+com\qa\app\loggers\LoggingUtil.class
+com\qa\app\utils\BrowserFactory.class
+com\qa\app\utils\Utility.class
+com\qa\app\pages\LoginPage.class
+com\qa\app\utils\ConfigReader.class
+com\qa\app\utils\BaseClass.class

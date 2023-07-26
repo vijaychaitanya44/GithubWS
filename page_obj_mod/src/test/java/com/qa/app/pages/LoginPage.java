@@ -22,4 +22,5 @@ public class LoginPage {
 		driver.findElement(btn).click();
 	}
 	
+	
 }
